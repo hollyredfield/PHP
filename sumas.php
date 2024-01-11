@@ -39,3 +39,19 @@ echo "El resultado es: ";
 
 }
 echo "Esta función tiene parámetros por defecto".resta();
+
+<?php
+function calculadora($a, $b) {
+    echo "Suma: " . ($a + $b) . PHP_EOL;
+    echo "Resta: " . ($a - $b) . PHP_EOL;
+    echo "Multiplicación: " . ($a * $b) . PHP_EOL;
+    if ($b != 0) {
+        echo "División: " . ($a / $b) . PHP_EOL;
+    } else {
+        echo "División: No se puede dividir por cero" . PHP_EOL;
+    }
+}
+
+// Prueba la función con dos números
+calculadora(10, 5);
+?>
